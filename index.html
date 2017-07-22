@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<div class="container">
+				<div class="navbar1">
+					<ul type="none" id="mainMenu">
+						<li><a href="#">Головна</a></li>
+						<li><a href="#">Програма</a></li>
+						<li><a href="#">Для відвідувачів</a></li>
+						<li><a href="#">Галерея</a></li>
+						<li><a href="#">Про фестиваль</a></li>
+						<li><a href="#">Про заповідник</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="navbar2">
+					<ul type="none" id="buttons">
+						<li>
+						<div id="button">
+							<a href="#" id="button">Учасникам</a>		
+						</div>
+						</li>
+						<li>
+						<div id="button">
+							<a href="#" id="button">Купити кпиток</a>
+						</div>
+						</li>
+					</ul>
+					<div class="language">
+						<ul type="none">
+							<li>eng</li>
+							<li id="ua">укр</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="baner">
+			<div class="container">
+				<img src="img/logo1.png" id="Logo1"><br>
+				<img src="img/logo2.png" id="Logo2">
+			</div>
+		</div>
+	</header>
+	<section>
+		<div id="section_1">
+			<div class="container">
+				<div id="ToTheMainPage">
+					<a href="#"><i class="fa fa-angle-left"> На головну</i></a>
+				</div>
+				<div id="sectionTitle">
+					<div id="redblock"></div>
+					<div id="sectionTitleText">
+						<p>Програма фестивалю</p>
+					</div>
+					<div id="viewStyle">
+						<i class="fa fa-bars" id="bars"></i>
+						<i class="fa fa-th-large" id="large"></i>
+					</div>						
+				</div>
+				<div id="events">
+					<div class="col-md-3" id="eventFilter">
+						<div class="FilterDate" id="Filter">
+							<p class="title">Дата</p>
+							<div id="checkboxes">
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"><i class="fa fa-check" aria-hidden="true"></i></i></label><p id="checkbox_Select">Всі</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">5 серпня</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">6 серпня</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">7 серпня</p>
+								</div>
+							</div>
+						</div>
+						<div class="FilterTopic" id="Filter">
+							<p class="title">Тема</p>
+							<div id="checkboxes">
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"><i class="fa fa-check" aria-hidden="true"></i></i></label><p id="checkbox_Select">Всі</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Воїни</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Ремісники</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Тустанський університет</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Театральна галявина</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Камерна сцена</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Духовна територія</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="FilterLocation" id="Filter">
+							<p class="title">Локаці</p>
+							<div id="checkboxes">
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"><i class="fa fa-check" aria-hidden="true"/></i></i></label><p id="checkbox_Select">Всі</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Сцена 1</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Сцена 2</p>
+								</div>
+								<div id="checkbox">
+									<label><input type="checkbox"><i id="border"></i></label><p id="checkbox_NotSelect">Сцена 3</p>
+								</div>
+							</div>
+						</div>
+						<div id="button2">
+							<a href="#" id="FilterButton">Фільтрувати</a>
+						</div>
+						<div id="button2">
+							<a href="#" id="FilterButton">Скинути фільтр</a>
+						</div>
+						<div id="button2">
+							<a href="#" id="FilterButton">Завантажити PDF</a>
+						</div>
+					</div>
+					<div class="col-md-9" id="schedule">
+						<div class="container-fluid" id="containerEvent">
+							<div class="row">
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Похід воїнів Бургунди</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+									</div>
+								</div>
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Дитячий штурм фортеці</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">14:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Головна сцена</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 2</p></div>
+									</div>
+								</div>
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Похід воїнів Бургунди</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата: </p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час: </p><p id="Details">17:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема: </p><p id="Details">Воїни</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація: </p><p id="Details">Сцена 1</p></div>
+									</div>
+								</div>
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Дитячий штурм фортеці</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">14:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Головна сцена</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 2</p></div>
+									</div>
+								</div>
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Похід воїнів Бургунди</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+									</div>
+								</div>
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Дитячий штурм фортеці</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">14:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Головна сцена</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 2</p></div>
+									</div>
+								</div>
+								<div id="event">
+									<div id="eventImage"></div>
+									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
+										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
+										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
+										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>		
+	</section>
+	<footer>
+		<div class="container" id="footer">
+				<div id="rowLogoLinks">
+					<div id="logo2"><img src="img/logo.png" alt=""></div>
+					<div id="Email"><p>pr@tustan.ua<br>+38 067 282 00 62</p></div>
+					<div id="Links">
+						<div id="Link">
+							<a href="https://www.facebook.com/tustan.ua/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+						<div id="Link">
+							<a href="https://plus.google.com/u/0/107813629134951401176"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+						<div id="Link">
+							<a href="https://www.youtube.com/user/Tustanua"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div id="rowDescriptionFooter">
+					<div id="DescriptionFooter"><p>Ідея цьогорічного фестивалю «Ту Стань!» – це події ХІІІ століття, які мали на меті об’єднати Європу у боротьбі проти монгол. Ще в 13 ст. Україна виступила щитом між Європою і Азією. У сучасній історії України можна провести чимало паралелей з історією державних об`єднань, які існували на українській території у попередні епохи. Під час фестивалю, Ви матимете змогу взяти участь у реконструкції побуту часів короля Данила Романовича, який виступив проти ординців, зміцнив Галицько-Волинську державу й намагався відновити незалежну Русь.</p></div>
+					<div id="Copyright">
+						<p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2015</p>
+					</div>
+				</div>
+		</div>
+	</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
