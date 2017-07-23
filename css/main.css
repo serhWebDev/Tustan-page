@@ -261,46 +261,32 @@ body {
   display: flex;
   height: 20px; }
 
-#checkbox > label {
-  margin-right: 7px; }
+#CheckMark {
+  position: relative;
+  top: 1px;
+  left: -21px;
+  color: #ffffff; }
+
+input:checked + label {
+  color: #a8363b; }
+  input:checked + label #CheckMark {
+    color: #a8363b; }
 
 input {
   display: none; }
 
-i#border {
+label:before {
+  position: absolut;
+  content: "";
   display: inline-block;
   width: 21px;
   height: 21px;
   border: 1px solid #818181;
-  -webkit-border-radius: 1px;
-          border-radius: 1px; }
+  vertical-align: middle; }
 
-i.fa {
-  margin: 0 0 3px 2px;
-  top: 0;
-  color: #a8363b; }
-
-i.fa:before {
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
-
-input:checked + i.fa:before {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1); }
-
-#checkbox_Select {
-  color: #a8363b;
-  font-weight: bold;
-  font-size: 14px; }
-
-#checkbox_NotSelect {
-  font-weight: bold;
-  font-size: 14px; }
+#explanationCheckbox {
+  float: right;
+  margin-left: -8px; }
 
 .title {
   margin: 21px 0  18px 28px;
