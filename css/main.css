@@ -424,7 +424,7 @@ footer {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 368px;
+  height: auto;
   width: 100%;
   background: #a8353a; }
 
@@ -484,7 +484,7 @@ footer {
   color: #491618; }
 
 #Copyright {
-  margin: 22px 0 0 0;
+  margin: 22px 0 45px 0;
   padding: 0; }
 
 #Copyright p > i {
