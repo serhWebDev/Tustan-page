@@ -3,43 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="/css/font-awesome.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header>
 		<div class="menu">
 			<div class="container">
-				<div class="navbar1">
-					<ul type="none" id="mainMenu">
-						<li><a href="#">Головна</a></li>
-						<li><a href="#">Програма</a></li>
-						<li><a href="#">Для відвідувачів</a></li>
-						<li><a href="#">Галерея</a></li>
-						<li><a href="#">Про фестиваль</a></li>
-						<li><a href="#">Про заповідник</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-				</div>
-				<div class="navbar2">
-					<ul type="none" id="buttons">
-						<li>
-						<div id="button">
-							<a href="#" id="button">Учасникам</a>		
-						</div>
-						</li>
-						<li>
-						<div id="button">
-							<a href="#" id="button">Купити кпиток</a>
-						</div>
-						</li>
-					</ul>
-					<div class="language">
-						<ul type="none">
-							<li>eng</li>
-							<li id="ua">укр</li>
+				<div  id="menu">
+					<div class="navbar1">
+						<ul type="none" id="mainMenu">
+							<li><a href="#">Головна</a></li>
+							<li><a href="#">Програма</a></li>
+							<li><a href="#">Для відвідувачів</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">Про фестиваль</a></li>
+							<li><a href="#">Про заповідник</a></li>
+							<li><a href="#">FAQ</a></li>
 						</ul>
+					</div>
+					<div class="navbar2">
+						<ul type="none" id="buttons">
+							<li>
+							<div id="buttonButton">
+								<a href="#" id="buttonLink">Учасникам</a>		
+							</div>
+							</li>
+							<li>
+							<div id="buttonButton">
+								<a href="#" id="buttonLink">Купити кпиток</a>
+							</div>
+							</li>
+						</ul>
+						<div class="language">
+							<ul type="none">
+								<li><a href="#" id="uk">eng</a></li>
+								<li><a href="#" id="ua">укр</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -57,9 +59,9 @@
 				<div id="ToTheMainPage">
 					<a href="#"><i class="fa fa-angle-left"> На головну</i></a>
 				</div>
-				<div id="sectionTitle">
-					<div id="redblock"></div>
+				<div id="sectionTitle">					
 					<div id="sectionTitleText">
+						<div id="redblock"></div>
 						<p>Програма фестивалю</p>
 					</div>
 					<div id="viewStyle">
@@ -68,7 +70,7 @@
 					</div>						
 				</div>
 				<div id="events">
-					<div class="col-md-3" id="eventFilter">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3" id="eventFilter">
 						<div class="FilterDate" id="Filter">
 							<p class="title">Дата</p>
 							<div id="checkboxes">
@@ -140,101 +142,185 @@
 							<a href="#" id="FilterButton">Завантажити PDF</a>
 						</div>
 					</div>
-					<div class="col-md-9" id="schedule">
-						<div class="container-fluid" id="containerEvent">
-							<div class="row">
-								<div id="event">
-									<div id="eventImage"></div>
+					<div class="container col-xs-6 col-sm-6 col-md-9 col-lg-9" id="schedule">
+						<div id="containerEvent">
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
 									<div id="eventTitle">Похід воїнів Бургунди</div>
 									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
-									</div>
-								</div>
-								<div id="event">
-									<div id="eventImage"></div>
-									<div id="eventTitle">Дитячий штурм фортеці</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">14:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Головна сцена</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 2</p></div>
-									</div>
-								</div>
-								<div id="event">
-									<div id="eventImage"></div>
-									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">17:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div id="event">
-									<div id="eventImage"></div>
-									<div id="eventTitle">Похід воїнів Бургунди</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата: </p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час: </p><p id="Details">17:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема: </p><p id="Details">Воїни</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація: </p><p id="Details">Сцена 1</p></div>
-									</div>
-								</div>
-								<div id="event">
-									<div id="eventImage"></div>
+							<div id="event">
+								<div id="eventImage"></div>								
+								<div id="eventDescriptionWithTitle">
 									<div id="eventTitle">Дитячий штурм фортеці</div>
 									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">14:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Головна сцена</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 2</p></div>
-									</div>
-								</div>
-								<div id="event">
-									<div id="eventImage"></div>
-									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">14:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Головна сцена</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 2</p>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div id="event">
-									<div id="eventImage"></div>
-									<div id="eventTitle">Похід воїнів Бургунди</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
-									</div>
-								</div>
-								<div id="event">
-									<div id="eventImage"></div>
-									<div id="eventTitle">Дитячий штурм фортеці</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">14:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Головна сцена</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 2</p></div>
-									</div>
-								</div>
-								<div id="event">
-									<div id="eventImage"></div>
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
 									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
 									<div id="eventDescription">
-										<div id="eventDescriptionDay"><p id="Criterion">Дата:</p><p id="Details">6.08</p></div>
-										<div id="eventDescriptionTime"><p id="Criterion">Час:</p><p id="Details">17:00</p></div>
-										<div id="eventDescriptionTopic"><p id="Criterion">Тема:</p><p id="Details">Воїни</p></div>
-										<div id="eventDescriptionLocation"><p id="Criterion">Локація:</p><p id="Details">Сцена 1</p></div>
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">17:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
+										</div>
+									</div>
+								</div>
+							</div>							
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
+									<div id="eventTitle">Похід воїнів Бургунди</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">17:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
+									<div id="eventTitle">Дитячий штурм фортеці</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">14:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Головна сцена</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 2</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
+									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">17:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
+									<div id="eventTitle">Похід воїнів Бургунди</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">17:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
+									<div id="eventTitle">Дитячий штурм фортеці</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">14:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Головна сцена</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 2</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="event">
+								<div id="eventImage"></div>
+								<div id="eventDescriptionWithTitle">
+									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
+									<div id="eventDescription">
+										<div id="eventDescriptionDay">
+											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
+										</div>
+										<div id="eventDescriptionTime">
+											<p id="Criterion">Час:</p><p id="Details">17:00</p>
+										</div>
+										<div id="eventDescriptionTopic">
+											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
+										</div>
+										<div id="eventDescriptionLocation">
+											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
+										</div>
 									</div>
 								</div>
 							</div>

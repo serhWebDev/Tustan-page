@@ -5,33 +5,49 @@ body {
 .menu {
   margin: 0;
   padding: 0;
-  height: 50px;
   width: 100%;
+  hight: auto;
   background: #fdfbf6; }
+
+#menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
 
 .container {
   padding: 0; }
 
 .navbar1 {
   margin: 0;
+  padding: 0; }
+
+#mainMenu {
+  margin: 16px 0 0 0;
   padding: 0;
-  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  float: left; }
-
-#mainMenu {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
 
 #mainMenu > li {
-  margin: 16px 30px 0 0; }
+  margin: 0 30px 0 0; }
 
 #mainMenu > li > a {
   font-size: 14px;
@@ -45,12 +61,10 @@ body {
 .navbar2 {
   margin: 0;
   padding: 0;
-  border: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  float: right; }
+  display: flex; }
 
 #buttons {
   margin: 9px 0 0;
@@ -73,7 +87,11 @@ body {
           border-radius: 4px;
   text-align: center; }
 
-#button {
+#buttonButton {
+  margin: 4px 0 0;
+  color: #f9f2f2; }
+
+#buttonLink {
   margin: 4px 0 0;
   color: #f9f2f2;
   text-decoration: none; }
@@ -81,7 +99,9 @@ body {
 #buttons > li:hover {
   background: #fdfbf6;
   border: 1px solid #a8353a; }
-  #buttons > li:hover #button {
+  #buttons > li:hover #buttonLink {
+    color: #a8353a; }
+  #buttons > li:hover #buttonButton {
     color: #a8353a; }
 
 .language {
@@ -89,6 +109,10 @@ body {
   padding: 0;
   font-size: 13px;
   font-weight: bold; }
+
+.language > ul > li > a {
+  text-decoration: none;
+  color: #000; }
 
 #ua {
   color: #a8353a; }
@@ -109,9 +133,10 @@ body {
   padding: 0; }
 
 #section_1 {
+  position: relative;
   margin: 0;
   padding: 0;
-  height: 1510px;
+  height: auto;
   width: 100%;
   background: #f6edd0; }
 
@@ -131,20 +156,28 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#sectionTitleText {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
 
 #redblock {
-  margin: 0;
+  margin: 0 13px 0 0;
   padding: 0;
   width: 7px;
   height: 21px;
   background: #a8353a; }
-
-#sectionTitleText {
-  margin: 0 0 0 13px;
-  padding: 0;
-  width: 377px;
-  height: 21px; }
 
 #sectionTitleText > p {
   margin: 0;
@@ -156,7 +189,7 @@ body {
   text-transform: uppercase; }
 
 #viewStyle {
-  margin: 0 0 0 718px;
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -202,15 +235,16 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
 
 #Filter {
   width: 100%;
@@ -290,7 +324,7 @@ input:checked + i.fa:before {
   margin: 8px 0 0 6px; }
 
 #button2 {
-  margin: 0 0 0 26px;
+  margin: 0;
   position: relative;
   height: 46px;
   width: 223px;
@@ -316,30 +350,30 @@ input:checked + i.fa:before {
 #schedule {
   margin: 0;
   padding: 0;
-  height: 1335px;
-  width: 870px; }
+  height: auto; }
 
 #containerEvent {
   margin: 0;
-  padding: 0; }
-
-.row {
-  margin: 30px 0 0 0;
-  padding: 0; }
-
-.row:first-child {
-  margin: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 #event {
-  margin: 0 0 0 30px;
+  margin: 0 0 30px 0;
   padding: 0;
   float: left;
   height: 425px;
   width: 270px;
   background: #ffffff; }
-
-#event:first-child {
-  margin: 0; }
 
 #eventImage {
   margin: 0;
@@ -348,11 +382,29 @@ input:checked + i.fa:before {
   width: 270px;
   background: url(../img/knight.gif); }
 
-#eventTitle {
+#eventDescriptionWithTitle {
   margin: 20px 0 0 13px;
+  height: 160px;
+  width: 255px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
+
+#eventTitle {
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase; }
+
+#eventDescription {
+  height: 90px; }
 
 #eventDescription > div {
   display: -webkit-box;
@@ -360,25 +412,18 @@ input:checked + i.fa:before {
   display: -ms-flexbox;
   display: flex; }
 
-#eventDescription {
-  margin: 54px 0 0 13px; }
-
-#event:last-child > #eventDescription {
-  margin: 34px 0 0 13px; }
-
-#eventDescription > div > p {
-  margin: 0; }
-
 #Details {
+  margin: 0;
   padding-left: 6px; }
 
 #Criterion {
+  margin: 0;
   color: #6e6e6e; }
 
 footer {
+  position: relative;
   margin: 0;
   padding: 0;
-  bottom: 0;
   height: 368px;
   width: 100%;
   background: #a8353a; }
