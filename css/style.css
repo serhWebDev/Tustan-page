@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#index-banner{
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg.gif") no-repeat center / cover; !important;
+}
+.grey-text.text-darken-3{
+    padding: 0 5px;
+}
+.headerButton{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+#progFest{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.filterBTN {
+    margin: 10px 0;
+    width: 100%;
+}
+#eventBlock{
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.event{
+    margin: 15px 15px;
+    padding: 10px;
+    float: left;
+    width: 260px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+}
+.eventImage {
+    width: 240px;
+}
+.event > p{
+    margin: 0;
+}

@@ -1,421 +1,224 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
-	<meta charset="UTF-8">
-	<title>Тустань</title>
-	<link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Font Awesome CDN-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--React CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
 </head>
-<body>
-	<header>
-		<div class="menu">
-			<div class="container">
-				<div  id="menu">
-					<div class="navbar1">
-						<ul type="none" id="mainMenu">
-							<li><a href="#">Головна</a></li>
-							<li><a href="#">Програма</a></li>
-							<li><a href="#">Для відвідувачів</a></li>
-							<li><a href="#">Галерея</a></li>
-							<li><a href="#">Про фестиваль</a></li>
-							<li><a href="#">Про заповідник</a></li>
-							<li><a href="#">FAQ</a></li>
-						</ul>
-					</div>
-					<div class="navbar2">
-						<ul type="none" id="buttons">
-							<li>
-							<div id="buttonButton">
-								<a href="#" id="buttonLink">Учасникам</a>		
-							</div>
-							</li>
-							<li>
-							<div id="buttonButton">
-								<a href="#" id="buttonLink">Купити кпиток</a>
-							</div>
-							</li>
-						</ul>
-						<div class="language">
-							<ul type="none">
-								<li><a href="#" id="uk">eng</a></li>
-								<li><a href="#" id="ua">укр</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="baner">
-			<div class="container">
-				<img src="img/logo1.png" id="Logo1"><br>
-				<img src="img/logo2.png" id="Logo2">
-			</div>
-		</div>
-	</header>
-	<section>
-		<div id="section_1">
-			<div class="container">
-				<div id="ToTheMainPage">
-					<a href="#"><i class="fa fa-angle-left"> На головну</i></a>
-				</div>
-				<div id="sectionTitle">					
-					<div id="sectionTitleText">
-						<div id="redblock"></div>
-						<p>Програма фестивалю</p>
-					</div>
-					<div id="viewStyle">
-						<i class="fa fa-bars" id="bars"></i>
-						<i class="fa fa-th-large" id="large"></i>
-					</div>						
-				</div>
-				<div id="events">
-					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3" id="eventFilter">
-						<div class="FilterDate" id="Filter">
-							<p class="title">Дата</p>
-							<div id="checkboxes">
-								<div id="checkbox">
-									<input id="MyCheckbox_1" type="checkbox">
-									<label for="MyCheckbox_1">
-										<i for="MyCheckbox_1" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Всі</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_2" type="checkbox">
-									<label for="MyCheckbox_2">
-										<i for="MyCheckbox_2" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">5 серпня</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_3" type="checkbox">
-									<label for="MyCheckbox_3">
-										<i for="MyCheckbox_3" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">6 серпня</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_4" type="checkbox">
-									<label for="MyCheckbox_4">
-										<i for="MyCheckbox_4" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">7 серпня</p>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="FilterTopic" id="Filter">
-							<p class="title">Тема</p>
-							<div id="checkboxes">
-								<div id="checkbox">
-									<input id="MyCheckbox_5" type="checkbox">
-									<label for="MyCheckbox_5">
-										<i for="MyCheckbox_5" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Всі</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_6" type="checkbox">
-									<label for="MyCheckbox_6">
-										<i for="MyCheckbox_6" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Воїни</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_7" type="checkbox">
-									<label for="MyCheckbox_7">
-										<i for="MyCheckbox_7" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Ремісники</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_8" type="checkbox">
-									<label for="MyCheckbox_8">
-										<i for="MyCheckbox_8" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Тустанський університет</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_9" type="checkbox">
-									<label for="MyCheckbox_9">
-										<i for="MyCheckbox_9" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Театральна галявина</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_10" type="checkbox">
-									<label for="MyCheckbox_10">
-										<i for="MyCheckbox_10" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Камерна сцена</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_11" type="checkbox">
-									<label for="MyCheckbox_11">
-										<i for="MyCheckbox_11" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Духовна територія</p>
-									</label>
-								</div>
-							</div>
-							
-						</div>
-						<div class="FilterLocation" id="Filter">
-							<p class="title">Локаці</p>
-							<div id="checkboxes">
-								<div id="checkbox">
-									<input id="MyCheckbox_12" type="checkbox">
-									<label for="MyCheckbox_12">
-										<i for="MyCheckbox_12" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Всі</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_13" type="checkbox">
-									<label for="MyCheckbox_13">
-										<i for="MyCheckbox_13" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Сцена 1</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_14" type="checkbox">
-									<label for="MyCheckbox_14">
-										<i for="MyCheckbox_14" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Сцена 2</p>
-									</label>
-								</div>
-								<div id="checkbox">
-									<input id="MyCheckbox_15" type="checkbox">
-									<label for="MyCheckbox_15">
-										<i for="MyCheckbox_15" class="fa fa-check" id="CheckMark" aria-hidden="true"></i>
-										<p id="explanationCheckbox">Сцена 3</p>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div id="button2">
-							<a href="#" id="FilterButton">Фільтрувати</a>
-						</div>
-						<div id="button2">
-							<a href="#" id="FilterButton">Скинути фільтр</a>
-						</div>
-						<div id="button2">
-							<a href="#" id="FilterButton">Завантажити PDF</a>
-						</div>
-					</div>
-					<div class="container col-xs-6 col-sm-6 col-md-9 col-lg-9" id="schedule">
-						<div id="containerEvent">
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Похід воїнів Бургунди</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">17:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>								
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Дитячий штурм фортеці</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">14:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Головна сцена</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 2</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">17:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
-										</div>
-									</div>
-								</div>
-							</div>							
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Похід воїнів Бургунди</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">17:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Дитячий штурм фортеці</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">14:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Головна сцена</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 2</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">17:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Похід воїнів Бургунди</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">17:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Дитячий штурм фортеці</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">14:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Головна сцена</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 2</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="event">
-								<div id="eventImage"></div>
-								<div id="eventDescriptionWithTitle">
-									<div id="eventTitle">Театр "Любарт", вистава "Казан"</div>
-									<div id="eventDescription">
-										<div id="eventDescriptionDay">
-											<p id="Criterion">Дата:</p><p id="Details">6.08</p>
-										</div>
-										<div id="eventDescriptionTime">
-											<p id="Criterion">Час:</p><p id="Details">17:00</p>
-										</div>
-										<div id="eventDescriptionTopic">
-											<p id="Criterion">Тема:</p><p id="Details">Воїни</p>
-										</div>
-										<div id="eventDescriptionLocation">
-											<p id="Criterion">Локація:</p><p id="Details">Сцена 1</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>			
-			</div>
-		</div>		
-	</section>
-	<footer>
-		<div class="container" id="footer">
-				<div id="rowLogoLinks">
-					<div id="logo2"><img src="img/logo.png" alt=""></div>
-					<div id="Email"><p>pr@tustan.ua<br>+38 067 282 00 62</p></div>
-					<div id="Links">
-						<div id="Link">
-							<a href="https://www.facebook.com/tustan.ua/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						</div>
-						<div id="Link">
-							<a href="https://plus.google.com/u/0/107813629134951401176"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						</div>
-						<div id="Link">
-							<a href="https://www.youtube.com/user/Tustanua"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				<div id="rowDescriptionFooter">
-					<div id="DescriptionFooter"><p>Ідея цьогорічного фестивалю «Ту Стань!» – це події ХІІІ століття, які мали на меті об’єднати Європу у боротьбі проти монгол. Ще в 13 ст. Україна виступила щитом між Європою і Азією. У сучасній історії України можна провести чимало паралелей з історією державних об`єднань, які існували на українській території у попередні епохи. Під час фестивалю, Ви матимете змогу взяти участь у реконструкції побуту часів короля Данила Романовича, який виступив проти ординців, зміцнив Галицько-Волинську державу й намагався відновити незалежну Русь.</p></div>
-					<div id="Copyright">
-						<p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2015</p>
-					</div>
-				</div>
-		</div>
-	</footer>
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
+<body class="deep-orange lighten-5">
+<header>
+    <nav class="deep-orange lighten-5">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons red-text text-darken-4">menu</i></a>
+                <ul class="hide-on-med-and-down" style="margin: 0 auto">
+                    <li><a class="grey-text text-darken-3" href="#"><b>Головна</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Програма</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Для відвідувачів</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Галерея</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Про фестиваль</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Про заповідник</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>FAQ</b></a></li>
+                    <li class="right"><a class="red-effect waves-light red darken-4 btn headerButton">Учасникам</a></li>
+                    <li class="right"><a class="red-effect waves-light red darken-4 btn headerButton">Купити квиток</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <img src="img/logo1.png" alt="Тустань" style="width: 250px; margin: 10px 10px 0 10px">
+                    <li><a class="grey-text text-darken-3" href="#"><b>Головна</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Програма</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Для відвідувачів</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Галерея</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Про фестиваль</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>Про заповідник</b></a></li>
+                    <li><a class="grey-text text-darken-3" href="#"><b>FAQ</b></a></li>
+                    <li><a class="red-effect waves-light red darken-4 btn">Учасникам</a></li>
+                    <li><a class="red-effect waves-light red darken-4 btn">Купити квиток</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <br>
+                <br>
+                <div class="row hide-on-med-and-down">
+                    <img src="img/logo.png" alt="Фестиваль української середньовічної культури">
+                </div><div class="row">
+                <img src="img/logo1.png" alt="Тустань">
+            </div>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="deep-orange lighten-5">
+        <div class="container">
+            <div class="row">
+                <p class="deep-orange-text text-accent-4"><i class="fas fa-chevron-circle-left"></i><b> На головну</b></p>
+            </div>
+            <div class="row">
+                <div class="col s10 left">
+                    <h6 class="" id="progFest"><i class="fas fa-square deep-orange-text text-accent-4"></i><b> Програма фестивалю</b></h6>
+                </div>
+                <div class="col s2 right deep-orange-text text-accent-4">
+                    <i class="fas fa-th right" style="margin: 0 5px"></i> <i class="fas fa-align-justify right" style="margin: 0 5px"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="deep-orange lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col hide-on-med-and-down l3">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <h6><b>Дата</b></h6>
+                            </div>
+                            <div class="collapsible-body">
+                                <form action="#">
+                                    <p>
+                                        <input name="group1" type="radio" id="time1" />
+                                        <label for="time1">Всі</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="time2" />
+                                        <label for="time2">5 серпня</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="time3" />
+                                        <label for="time3">6 серпня</label>
+                                    </p>
+                                    <p>
+                                        <input name="group1" type="radio" id="time4" />
+                                        <label for="time4">7 серпня</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <h6><b>Тема</b></h6>
+                            </div>
+                            <div class="collapsible-body">
+                                <form action="#">
+                                    <p>
+                                        <input name="group2" type="radio" id="topic1" />
+                                        <label for="topic1">Всі</label>
+                                    </p>
+                                    <p>
+                                        <input name="group2" type="radio" id="topic2" />
+                                        <label for="topic2">Воїни</label>
+                                    </p>
+                                    <p>
+                                        <input name="group2" type="radio" id="topic3" />
+                                        <label for="topic3">Ремісники</label>
+                                    </p>
+                                    <p>
+                                        <input name="group2" type="radio" id="topic4" />
+                                        <label for="topic4">Тустанський університет</label>
+                                    </p>
+                                    <p>
+                                        <input name="group2" type="radio" id="topic5" />
+                                        <label for="topic4">Театральна галявина</label>
+                                    </p>
+                                    <p>
+                                        <input name="group2" type="radio" id="topic6" />
+                                        <label for="topic4">Камерна сцена</label>
+                                    </p>
+                                    <p>
+                                        <input name="group2" type="radio" id="topic7" />
+                                        <label for="topic4">Духовна територія</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <h6><b>Локації</b></h6>
+                            </div>
+                            <div class="collapsible-body">
+                                <form action="#">
+                                    <p>
+                                        <input class="red" name="group3" type="radio" id="location1" />
+                                        <label for="location1">Всі</label>
+                                    </p>
+                                    <p>
+                                        <input class="red" name="group3" type="radio" id="location2" />
+                                        <label for="location2">Сцена 1</label>
+                                    </p>
+                                    <p>
+                                        <input class="red" name="group3" type="radio" id="location3" />
+                                        <label for="location3">Сцена 2</label>
+                                    </p>
+                                    <p>
+                                        <input class="red" name="group3" type="radio" id="location4" />
+                                        <label for="location4">Сцена 3</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="red-effect waves-light red darken-4 btn-large filterBTN">Фільтрувати</a><br>
+                    <a class="red-effect waves-light red darken-4 btn-large filterBTN">Скинути</a><br>
+                    <a class="red-effect waves-light red darken-4 btn-large filterBTN">Купити квиток</a><br>
+                </div>
+                <div class="col m12 l9" id='mainContent' style="height: 100%"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer red darken-4" style="position: relative; width: 100% ">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <img src="img/logo3.png" alt="Тустань">
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <p class="white-text">pr@tustan.ua</p>
+                <p class="white-text">+38 067 282 00 62</p>
+                <ul style="display: flex">
+                    <li style="margin: 5px; font-size: 26px"><a class="grey-text text-lighten-3" href="https://www.facebook.com/tustan.ua/"><i class="fab fa-facebook"></i></a></li>
+                    <li style="margin: 5px; font-size: 26px"><a class="grey-text text-lighten-3" href="https://plus.google.com/u/0/107813629134951401176"><i class="fab fa-google-plus"></i></a></li>
+                    <li style="margin: 5px; font-size: 26px"><a class="grey-text text-lighten-3" href="https://www.youtube.com/user/Tustanua/videos"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <p class="grey-text text-lighten-4">Ідея цьогорічного фестивалю «Ту Стань!» – це події ХІІІ століття, які мали на меті об’єднати Європу у боротьбі проти монгол. Ще в 13 ст. Україна виступила щитом між Європою і Азією. У сучасній історії України можна провести чимало паралелей з історією державних об`єднань, які існували на українській території у попередні епохи. Під час фестивалю, Ви матимете змогу взяти участь у реконструкції побуту часів короля Данила Романовича, який виступив проти ординців, зміцнив Галицько-Волинську державу й намагався відновити незалежну Русь.</p>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p class="center">© Copyright 2018</p>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/babel" src="js/eventListComponent.js" />
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 </html>
