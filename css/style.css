@@ -25,9 +25,9 @@ body{
 }
 #eventBlock{
     margin: 0;
-
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .event{
     margin: 15px 15px;
